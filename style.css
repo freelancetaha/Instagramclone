@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+#container{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% auto 25%;
+}
+.side__nav__bar{
+    width: 100%;
+    height: 100vh;
+    border-right: 1px solid #0000004f;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.side__nav__bar .navbar__content .nav__content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+    position: absolute;
+    top: 9rem;
+}
+.side__nav__bar .navbar__content .nav__content li i{
+    font-size: 28px;
+}
+.side__nav__bar .navbar__content .nav__content li a{
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+}
+.side__nav__bar .menu__bar i{
+    font-size: 30px;
+}
+.side__nav__bar .menu__bar span{
+    font-size: 20px;
+}
+.following__profiles{
+    width: 25%;
+    height: 100vh;
+    position: relative;
+}
+.pro__container{
+    width: 21rem;
+    height: 10px;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.following__profiles .child__of__following{
+    width: 21rem;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.following__profiles .child__of__following .child__of__box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.following__profiles .child__of__following .child__of__box i{
+    font-size: 40px;
+}
+.suggestion__foryou{
+    width: 21rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.following__profiles .child__of__following .child__of__box .user__profile h3{
+    font-size: 17px;
+}
+.suggestion__follow__about{
+    height: 100px;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    top: 16rem;
+    left: 10px;
+}
+.suggestion__follow__about .suggestion__follow__inner__about{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    position: relative;
+}
+.suggestion__follow__about .suggestion__follow__inner__about li a{
+    font-size: 15px;
+    padding: 0 3px;
+}
+.center__main{
+    height: 100% auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* overflow: hidden; */
+    overflow-y: auto;
+}
+.top__content{
+    height: 17%;
+    width: 100%;
+    display: flex;
+}
+.top__content .status__boxes{
+    height: 100px;
+    width: 100px;
+    margin: 5px 0px 5px 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: linear-gradient(#ff0000, #0000ff) padding-box, linear-gradient(45deg, #ff0000, #0000ff) border-box;
+}
+.top__content .status__boxes img{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+}
+.main__content{
+    height: 100vh auto;
+    padding: 20px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.inner__posted__content__box{
+    height: 33rem;
+    width: 60%;
+    border: 1px solid #0000004f;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.inner__posted__child__boxes{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px;
+}
+.inner__content__profile__info{
+    height: 4rem;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.inner__content__profile__info .inner__content__profile{
+    height: 100%;
+    width: 25%;
+    border-radius: 50%;
+}
+.inner__content__profile__info .inner__content__profile img{
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.inner__content__profile__info .inner__content__pro__username h3{
+    font-size: 16px;
+}
+.inner__content__profile__info .inner__content__pro__username i{
+    color: #0000ff;
+}
+.inner__content__profile__info .inner__content__pro__username .inner__content_sound p{
+    font-size: 13px;
+} 
+.inner__content__profile__info__3__dots{
+    height: 4rem;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inner__content__profile__info__3__dots i{
+    font-size: 30px;
+    transform: rotate(90deg);
+}
+.inner__posted__child__boxes__content{
+    height: 16rem;
+    width: 100%;
+    margin: 10px;
+}
+.inner__posted__child__boxes__content img{
+    height: 16rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.bottom__content_line{
+    height: 8rem;
+    width: 100%;
+    padding: 1px;
+}
+.bottom__content_line .inner__posted__child__boxes__continue{
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bottom__content_line .inner__posted__child__boxes__continue .boxes__inner__child{
+    height: 2rem;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.bottom__content_line .inner__posted__child__boxes__continue .boxes__inner__child i{
+    font-size: 30px;
+}
+.bottom__content_line .inner__posted__child__boxes__continue .boxes__inner__child_1{
+    height: 2rem;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottom__content_line .inner__posted__child__boxes__continue .boxes__inner__child_1 i{
+    font-size: 24px;
+}
+.inner__posted__child__boxes_2{
+    height: 3rem;
+    width: 100%;
+    margin-top: 1px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
